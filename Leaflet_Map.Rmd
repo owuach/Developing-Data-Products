@@ -2,7 +2,8 @@
 title: "Developing Data Products Week 2 Assignment - Creating a Map with Leaflet"
 author: "Acheampong Owusu"
 date: "December 18, 2018"
-output: html_document: default
+output: 
+       html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -25,7 +26,7 @@ Does the web page feature an interactive map that appears to have been created w
 
 ## Creating the world map!
 
-```{r, echo=FALSE}
+```{r, echo=TRUE, fig.cap="World Map"}
 library(leaflet)
 my_map <- leaflet() %>%
 addTiles()
@@ -34,7 +35,7 @@ my_map
 
 ##Creating a link to an interesting toursist site in UK - London Bridge 
 
-```{r, echo=TRUE, fig.align='center', fig.cap="London Bridge"}
+```{r, echo=TRUE, fig.cap="London Bridge"}
 library(leaflet)
 LondonBridge  <- c("https://www.visitlondon.com/'> London Bridge</a>")
 leaflet() %>%
@@ -42,4 +43,4 @@ addTiles() %>%
 addMarkers(lat=51.5079, lng=0.0877, popup = LondonBridge)
 
 ```
-
+###A click on the blue icon on the map will display London Bridge.
