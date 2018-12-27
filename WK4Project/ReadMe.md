@@ -6,4 +6,4 @@ The peer assessed assignment has two parts. The first part is to create a Shiny 
 
 The app developed for the first part of the assignment demo is avalilable at:
 
-The source code for the ui.R and server.R files are available on the GitHub repo: 
+The source code for the ui.R and server.R files are available on the GitHub repo: https://github.com/owuach/Developing-Data-Products/tree/master/WK4Project 
