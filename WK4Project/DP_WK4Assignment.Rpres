@@ -1,0 +1,47 @@
+Peer-graded Assignment: Course Project: Shiny Application and Reproducible Pitch
+================================================================================
+author: Acheampong Owusu
+date: 27/12/2018
+autosize: true
+
+Assignment Overview
+================================================================================
+This application was designed for Developing Data Products and is part of the Coursera Data Science Speicalization Course.
+
+The peer assessed assignment has two parts. The first part is to create a Shiny application and deploy it on Rstudio's servers. The second part is to use Slidify or Rstudio Presenter to prepare a reproducible pitch presentation about your application.
+
+The app developed for the first part of the assignment demo is avalilable at:
+
+The source code for the ui.R and server.R files are available on the GitHub repo: https://github.com/owuach/Developing-Data-Products/tree/master/WK4Project 
+
+
+My Shiny Application
+===========================================================================
+In this section, I explain the Shiny Application I develop using Shiny Web Application of RStudio.
+I used the 'diamond' dataset which is part of the UsingR package. In this application, I tried to predict the price of a diamond based on its size in carats. 
+The application has the following features:
+1. The user interface (UI) comprises of a slider that the user slides to a specific carat size. 
+2. There is also a Submit button which the user clicks to submit the input.
+3. There is also a Histogram and a normal scatter plot which display the carat/prices.
+4. There are two textboxes. One shows the carat size selected and the other shows the predicted price based on the carat selected.
+The application works as follows:
+1. The user uses the Slider to select a specific carat size (By default, a carat size of 0.12 is selected. A bar indicating 0.12 is shown on both the Histogram and the plot with MSE=0.01024... It also displays a predicted price of 232.8).
+2. User hit the submit button. 
+3. The selected carat size is shown by a bar indicating the size selected on both the Histogram and the Plot as well as the MSE value. The size entered as well as the predicted price is shown on the Value Entered and Predicted Price textboxes respectively.
+
+
+Summary of the Diamond Data set for the Application
+========================================================
+```{r, echo=FALSE}
+library(UsingR)
+summary(diamond)
+```
+
+Plot of the Diamond Data set
+========================================================
+```{r, echo=FALSE}
+plot(diamond)
+
+```
+
+Thank you!
